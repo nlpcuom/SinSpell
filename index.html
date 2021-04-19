@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SinSpell</title>
+    <script src="bundle.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</head>
+<body class = "bg-dark">
+    <p class="display-3 text-success" id="SinSpellHeadline">
+        <b>SinSpell</b><br>
+        <small class="display-6 text-muted">Sinhala Spell Checker & Corrector</small>
+    </p>
+    <div class="row">
+        <div class="col">
+            <form id="input" onsubmit="checkSpell();return false">
+            <div class = "text-success pb-3"><b>Text to Check: </b></div><textarea class="form-control" style="min-width: 100%" id="TextToCheck" name="ttc" rows="25"  placeholder="Enter text to check"></textarea>
+            <div class = "text-center pt-4">
+                <input id="btn" type="submit" value="Check" class="btn btn-danger">
+            </div>
+            </form>
+        </div>
+        <div class="col" id="results">
+            <p class="display-7 text-success" id="SinSpellHeadline">
+                <b>Result:</b><br>
+            </p>
+            <div class="container-fluid border bg-light form-control" style="min-height: 86%">
+                <div id="output"></div>
+            </div>
+            <div class="container-fluid border">
+                <div id="popup"></div>
+            </div>
+        </div>
+</body>

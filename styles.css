@@ -1,0 +1,10 @@
+.invalid {
+    color: red;
+    text-decoration: underline;
+}
+.autocorrect {
+    color: blue;
+}
+.results {
+    margin-top: 1000px;
+}
